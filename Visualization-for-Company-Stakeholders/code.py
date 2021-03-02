@@ -50,22 +50,14 @@ plt.ylabel('Loan Status')
 plt.xticks(rotation=45)
 # Display plot
 plt.show()
-#print("Education and loan 1 test:",education_and_loan['N'][1])
-#print("Education and loan 2 test:",education_and_loan['N'][0])
-
 # Step 4 
 #Subsetting the dataframe based on 'Education' column
 graduate=data[data['Education']=="Graduate"]
 not_graduate=data[data['Education']=="Not Graduate"]
-
-#pd.Series.plot(kind='density', label='Graduate', data=graduate['LoanAmount'])
 #Subsetting the dataframe based on 'Education' column
 graduate.LoanAmount.plot.density(color='green') 
 plt.title('Density plot for Loan Amount-Graduate') 
 plt.show()
-
-#Plotting density plot for 'Graduate'
-
 
 #Plotting density plot for 'Graduate'
 not_graduate.LoanAmount.plot.density(color='red') 
@@ -100,23 +92,4 @@ ax_3.set_ylabel("Loan Amount")
 ax_3.set_title("Total Income")
 
 plt.show()
-#Setting the subplot axis title
-
-
-#Plotting scatter plot
-
-
-#Setting the subplot axis title
-
-
-#Creating a new column 'TotalIncome'
-
-
-#Plotting scatter plot
-
-
-
-#Setting the subplot axis title
-
-
 
